@@ -1,0 +1,7 @@
+Progress:
+- index.html created/updated ✅
+- style.css created/updated ✅
+- script.js created/updated ✅
+- assets/images + assets/music placeholders created ✅
+- Updated TODO.md ✅
+

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+
+  <title>Gomenasaii Sailaa</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <!-- Background layers -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg__glow"></div>
+    <div class="bg__grain"></div>
+  </div>
+
+
+
+  <!-- Floating hearts for hero -->
+  <div id="floating-hearts" class="floating-hearts" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="topbar__brand">
+      <span class="topbar__spark" aria-hidden="true">✦</span>
+      <span class="topbar__title">Permintaan maaf yg 100% tulus rill </span>
+    </div>
+
+    <div class="topbar__actions">
+      <button id="musicToggle" class="icon-btn" type="button" aria-label="Play background music" title="Background music">
+        <span class="icon-btn__icon" aria-hidden="true">♪</span>
+        <span class="icon-btn__label" id="musicToggleLabel">Play</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page" id="main">
+    <!-- HERO -->
+    <section class="section hero" id="hero">
+      <div class="hero__inner">
+        <div class="hero__copy reveal">
+          <h1 class="hero__h1">Buat my wife,my mine, my mbg gwehj aseli yang paling kyutt❤️</h1>
+          <p class="hero__sub">
+            Dibacaa & discroll sampe habiss ya sygg, oh ya play musicnya duluu<br />
+            Makasih ya sygg udah mau buka & liatt maaf karena sampe sekarang aku masih sering bikin kamu sedih.
+          </p>
+
+          <div class="hero__hint">
+            <span class="hero__hint-dot" aria-hidden="true"></span>
+            <span>Scroll pelan2 aja, isinya dikit buatnya lama jir.</span>
+          </div>
+        </div>
+
+        <div class="hero__glass" role="note" aria-label="A gentle start">
+          <div class="hero__glassRow">
+            <div class="pill">Luxury minimal</div>
+            <div class="pill">Cinematic warmth</div>
+            <div class="pill">Handwritten energy</div>
+          </div>
+          <div class="hero__glassCopy">
+            <p>
+              Akuu mo mintaa maaf sayangg buat semua ucapan/tingkahku hiks
+              Akuu gaakan pernah bosen buat belajar cara kamu mau dicintai and dimengerti sygg.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MY APOLOGY CARD -->
+    <section class="section" id="apology">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>From ur Beloved Ray's</h2>
+          <p class="section-head__sub">Sincere, mature, and honest—because your feelings matter.</p>
+        </div>
+
+        <article class="glass card" aria-label="Apology card">
+          <ul class="apology-list">
+            <li><span class="bullet">✓</span> Aku tauu aku salahh.</li>
+            <li><span class="bullet">✓</span> Kamuu selaluu ngomong gapapaa padahal aku tau kamu ga baik2 ajaa.</li>
+            <li><span class="bullet">✓</span> Soalnya kamu kalau bete tu keliatan banget, mana kalau di online susah bujuknya.</li>
+            <li><span class="bullet">✓</span> Aku janji buat terus bareng kamu, and tumbuh lebih baik terus bareng kamu, selalu bahagia bareng kamu.</li>
+            <li><span class="bullet">✓</span> So, aku sadar kalau "Pak tua" cuma salah satu dr banyak cara kamu nunjukin cinta kamu.</li>
+            <li><span class="bullet">✓</span> Jadi gapapaa kokk, panggil aku sebebas & semau kamu ya sygg "u can call me anything u wantt..."</li>
+          </ul>
+
+          <div class="divider" aria-hidden="true"></div>
+
+          <p class="apology-closer">
+            Janji sama akuu buat tetepp jadii Saila yang aku kenall yaaa sayangg
+            Selalu bahagiaaa,ceria,aktif,lucu and menyenangkannn sabarr2 yahh ngehadepin akuu yg moodyan ini hehe
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ENVELOPE + LETTER -->
+    <section class="section" id="letter">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Open My Letter</h2>
+          <p class="section-head__sub">A quiet apology—written slowly, like it deserves.</p>
+        </div>
+
+        <div class="letter-grid">
+          <div class="envelope-wrap">
+            <div class="envelope" id="envelope" aria-label="Closed envelope" role="button" tabindex="0">
+              <div class="envelope__front" aria-hidden="true"></div>
+              <div class="envelope__back" aria-hidden="true"></div>
+              <div class="envelope__paper" aria-hidden="true">
+                <div class="envelope__paperInner"></div>
+              </div>
+            </div>
+
+            <button id="openLetterBtn" class="primary" type="button">
+              Open My Letter 💌
+            </button>
+
+            <p class="microhint">Tip: You can also press Enter/Space on the envelope.</p>
+          </div>
+
+          <div class="letter" aria-label="Heartfelt apology letter">
+            <div class="letter__paper glass" id="letterPaper">
+              <div class="letter__header">
+                <div class="letter__seal" aria-hidden="true">❤</div>
+                <div>
+                  <div class="letter__to">To you, My Saila</div>
+                  <div class="letter__meta">Written with love & genuine care</div>
+                </div>
+              </div>
+
+              <div class="letter__body" id="typewriter" aria-live="polite"></div>
+              <div class="letter__cursor" aria-hidden="true">▍</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEMORIES -->
+    <section class="section" id="memories">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Our Memories</h2>
+          <p class="section-head__sub">Replace placeholders with your photos—then relive them together.</p>
+        </div>
+
+        <div class="gallery" aria-label="Memories gallery">
+          <button class="gallery__nav" data-dir="left" aria-label="Previous memories" type="button">‹</button>
+          <div class="gallery__track" id="galleryTrack">
+            <!-- Placeholder cards -->
+            <figure class="shot" tabindex="0" data-full="./assets/images/memory-1.jpg">
+              <img alt="Memory placeholder 1" src="./assets/images/memory-1.jpg" />
+              <figcaption>First time renang bareng kamuu, walaupun km nyebur doang haha</figcaption>
+            </figure>
+            <figure class="shot" tabindex="0" data-full="./assets/images/memory-2.jpg">
+              <img alt="Memory placeholder 2" src="./assets/images/memory-2.jpg" />
+              <figcaption>Kita lucuu bangett di 4Play hehe.</figcaption>
+            </figure>
+            <figure class="shot" tabindex="0" data-full="./assets/images/memory-3.jpg">
+              <img alt="Memory placeholder 3" src="./assets/images/memory-3.jpg" />
+              <figcaption>Momen kamu kek seneng banget ngecute aku di Solaria jir.</figcaption>
+            </figure>
+            <figure class="shot" tabindex="0" data-full="./assets/images/memory-4.jpg">
+              <img alt="Memory placeholder 4" src="./assets/images/memory-4.jpg" />
+              <figcaption>Salah satu foto fav mata kamu secakep ituu sygg.</figcaption>
+            </figure>
+            <figure class="shot" tabindex="0" data-full="./assets/images/memory-5.jpg">
+              <img alt="Memory placeholder 5" src="./assets/images/memory-5.jpg" />
+              <figcaption>Day 1 diajak check in jir.</figcaption>
+            </figure>
+          </div>
+          <button class="gallery__nav" data-dir="right" aria-label="Next memories" type="button">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- REASONS I LOVE YOU -->
+    <section class="section" id="love">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Reasons Why I Love Saila</h2>
+          <p class="section-head__sub">Tap a card—each one is real, and each one is yours.</p>
+        </div>
+
+        <div class="flipGrid" aria-label="Reasons list">
+          <!-- 10+ flip cards -->
+          <div class="flipCard" tabindex="0" role="button" aria-label="Your smile" data-front="Your smile" data-back="It makes ordinary days feel softer. When you smile, everything in me relaxes." aria-expanded="false">
+            <div class="flipCard__inner">
+              <div class="flipCard__face flipCard__front">Your smile</div>
+              <div class="flipCard__face flipCard__back">It makes ordinary days feel softer. When you smile, everything in me relaxes.</div>
+            </div>
+          </div>
+
+          <div class="flipCard" tabindex="0" role="button" aria-label="Your kindness" data-front="Your kindness" data-back="You care in a way that doesn’t ask for anything back. That kind of heart stays with me." aria-expanded="false">
+            <div class="flipCard__inner">
+              <div class="flipCard__face flipCard__front">Your kindness</div>
+              <div class="flipCard__face flipCard__back">You care in a way that doesn’t ask for anything back. That kind of heart stays with me.</div>
+            </div>
+          </div>
+
+          <div class="flipCard" tabindex="0" role="button" aria-label="Your patience" aria-expanded="false">
+            <div class="flipCard__inner">
+              <div class="flipCard__face flipCard__front">Your patience</div>
+              <div class="flipCard__face flipCard__back">You give me room to be better, even when I don’t deserve it right away.</div>
+            </div>
+          </div>
+
+          <div class="flipCard" tabindex="0" role="button" aria-label="The way you support me" aria-expanded="false">
+            <div class="flipCard__inner">
+              <div class="flipCard__face flipCard__front">Your support</div>
+              <div class="flipCard__face flipCard__back">You believe in me quietly, consistently, and that means more than I can explain.</div>
+            </div>
+          </div>
+
+          <div class="flipCard" tabindex="0" role="button" aria-label="The way you laugh" aria-expanded="false">
+            <div class="flipCard__inner">
+              <div class="flipCard__face flipCard__front">The way you laugh</div>
+              <div class="flipCard__face flipCard__back">Your laughter sounds like home. I never want to forget that sound.</div>
+            </div>
+          </div>
+
+          <div class="flipCard" tabindex="0" role="button" aria-label="How safe I feel around you" aria-expanded="false">
+            <div class="flipCard__inner">
+              <div class="flipCard__face flipCard__front">Feeling safe</div>
+              <div class="flipCard__face flipCard__back">When I’m with you, my mind slows down. I feel understood—truly.</div>
+            </div>
+          </div>
+
+          <div class="flipCard" tabindex="0" role="button" aria-label="Your little habits" aria-expanded="false">
+            <div class="flipCard__inner">
+              <div class="flipCard__face flipCard__front">Your little habits</div>
+              <div class="flipCard__face flipCard__back">The small things you do become my favorite details.</div>
+            </div>
+          </div>
+
+          <div class="flipCard" tabindex="0" role="button" aria-label="How you show love" aria-expanded="false">
+            <div class="flipCard__inner">
+              <div class="flipCard__face flipCard__front">How you love</div>
+              <div class="flipCard__face flipCard__back">You love with effort. You don’t just say it—you prove it.</div>
+            </div>
+          </div>
+
+          <div class="flipCard" tabindex="0" role="button" aria-label="Your strength" aria-expanded="false">
+            <div class="flipCard__inner">
+              <div class="flipCard__face flipCard__front">Your strength</div>
+              <div class="flipCard__face flipCard__back">You keep going with dignity. Even when it’s hard, you keep your heart gentle.</div>
+            </div>
+          </div>
+
+          <div class="flipCard" tabindex="0" role="button" aria-label="Your heart" aria-expanded="false">
+            <div class="flipCard__inner">
+              <div class="flipCard__face flipCard__front">Your heart</div>
+              <div class="flipCard__face flipCard__back">It’s warm, it’s real, and it makes me want to be better for you.</div>
+            </div>
+          </div>
+
+          <div class="flipCard" tabindex="0" role="button" aria-label="Your presence" aria-expanded="false">
+            <div class="flipCard__inner">
+              <div class="flipCard__face flipCard__front">Your presence</div>
+              <div class="flipCard__face flipCard__back">Even in silence, you feel like comfort. That’s a gift.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMISES -->
+    <section class="section" id="promises">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>My Promise To You</h2>
+          <p class="section-head__sub">Not just words. A path I will follow—day after day.</p>
+        </div>
+
+        <div class="timeline" aria-label="Promises timeline">
+          <div class="timeline__rail" aria-hidden="true"></div>
+          <div class="tcard" tabindex="0">
+            <h3>I will communicate better.</h3>
+            <p>I’ll explain my thoughts before they turn into silence or misunderstandings.</p>
+          </div>
+          <div class="tcard" tabindex="0">
+            <h3>I will listen before reacting.</h3>
+            <p>Your feelings come first. I will slow down and truly hear you.</p>
+          </div>
+          <div class="tcard" tabindex="0">
+            <h3>I will respect your feelings.</h3>
+            <p>No dismissing. No minimizing. I will validate you like you deserve.</p>
+          </div>
+          <div class="tcard" tabindex="0">
+            <h3>I will improve myself every day.</h3>
+            <p>I won’t wait for “another chance.” I’ll do better now.</p>
+          </div>
+          <div class="tcard" tabindex="0">
+            <h3>I won't stop choosing you.</h3>
+            <p>I’ll keep showing up with love, patience, and consistency.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ONE MORE THING -->
+    <section class="section" id="one-more">
+      <div class="wrap">
+        <div class="ctaCard glass">
+          <h2 class="ctaCard__h">One More Thing ❤️</h2>
+          <p class="ctaCard__p">This is me choosing you—again, and again.</p>
+          <button id="oneMoreBtn" class="primary big" type="button">
+            Press for a little magic
+          </button>
+          <div class="ctaCard__msg" id="oneMoreMsg" role="status" aria-live="polite" hidden>
+            If I could choose again,<br />
+            I'd still choose you.<br />
+            Every single time.
+          </div>
+        </div>
+      </div>
+
+      <div id="confetti" class="confetti" aria-hidden="true"></div>
+      <div id="heartExplosion" class="heartExplosion" aria-hidden="true"></div>
+    </section>
+
+    <!-- ENDING -->
+    <section class="section ending" id="ending">
+      <div class="wrap">
+        <div class="ending__card glass">
+          <div class="ending__heart" aria-hidden="true">❤</div>
+          <h2 class="ending__h">Makasii dah baca sampe selesaii ya cintaaa lov u mwahh.</h2>
+          <p class="ending__p">No matter what happens, you’ll always be my favorite person.</p>
+          <p class="ending__love">love you.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="spacer" aria-hidden="true"></div>
+  </main>
+
+  <footer class="footer">
+  <div class="footer__inner">
+    <span>Made with ❤️ by Ray's</span>
+    <span>Semarang, 27 Juni 2026</span>
+  </div>
+</footer>
+
+  <!-- Background music (user-initiated only) -->
+  <audio id="bgMusic" preload="none" loop>
+    <!-- Replace with your own file: assets/music/bg.mp3 -->
+    <source src="./assets/music/bg.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" hidden>
+    <button class="lightbox__close" type="button" aria-label="Close preview">✕</button>
+    <img id="lightboxImg" alt="Preview" />
+    <div class="lightbox__caption" id="lightboxCaption"></div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
+
